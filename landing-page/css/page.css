@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'naturegreen'; /* Choose a name for your font */
+    src: url('landing-page\font\nature_green/Nature Green Italic.woff2') format('woff2'),
+    url('landing-page\font\nature_green/Nature Green Italic.woff') format('woff');
+    /* Add more src lines for other formats if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+#font23{
+    font-family:'naturegreen', sans-serif;;
+}
