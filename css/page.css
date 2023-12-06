@@ -1,11 +1,63 @@
 @font-face {
-    font-family: 'naturegreen'; /* Choose a name for your font */
+    font-family: 'naturegreen';
+    /* Choose a name for your font */
     src: url('landing-page\font\nature_green/Nature Green Italic.woff2') format('woff2'),
-    url('landing-page\font\nature_green/Nature Green Italic.woff') format('woff');
+        url('landing-page\font\nature_green/Nature Green Italic.woff') format('woff');
     /* Add more src lines for other formats if needed */
     font-weight: normal;
     font-style: normal;
 }
-#font23{
-    font-family:'naturegreen', sans-serif;;
+
+#header {
+    background-color: red;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
 }
+#logo{
+    background: palegoldenrod;
+    margin-left: 100px;
+    padding: 5px;
+}
+#logo>h1{
+    color: white;
+    font-family: 'naturegreen';
+}
+
+.primary-nav{
+    background: rgb(177, 114, 240);
+    margin-right: 150px;    
+}
+.primary-nav>ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.primary-nav>ul>li{
+    margin: 10px;
+}
+.primary-nav>ul>li>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#navBtn{
+    width: 100px;
+    border-color: red;
+    border-radius: 15px;
+    background: transparent;
+}
+
+/* Slider */
+#Banner{
+    display: flex;
+    background: rgb(194, 64, 194);
+    justify-content:center;
+}
+.BannerImg{
+    background: red;
+
+}
+.BannerContent{
+background: yellow;
+}
+/* Slider */
