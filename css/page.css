@@ -8,56 +8,167 @@
     font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins&display=swap');
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+    --BG-color: rgb(133, 91, 237);
+    --Font-color: white;
+    --Font-color2: rgb(105, 0, 175);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* <<---------------------------------------------------------- >> */
+/* header */
 #header {
-    background-color: red;
+    background-color: var(--BG-color);
     height: 50px;
     display: flex;
     justify-content: space-between;
 }
-#logo{
-    background: palegoldenrod;
+
+#logo {
+    background: var(--BG-color);
     margin-left: 100px;
-    padding: 5px;
-}
-#logo>h1{
-    color: white;
-    font-family: 'naturegreen';
+    padding: 0px;
 }
 
-.primary-nav{
-    background: rgb(177, 114, 240);
-    margin-right: 150px;    
+#logo>h1 {
+    color: white;
+    font-family: sans-serif;
+
 }
-.primary-nav>ul{
+
+.primary-nav {
+
+    margin-right: 150px;
+}
+
+.primary-nav>ul {
     list-style: none;
     display: flex;
     gap: 30px;
 }
-.primary-nav>ul>li{
+
+.primary-nav>ul>li {
     margin: 10px;
 }
-.primary-nav>ul>li>a{
+
+.primary-nav>ul>li>a {
     text-decoration: none;
     color: aliceblue;
 }
-#navBtn{
+
+#navBtn {
+    font: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    ;
     width: 100px;
-    border-color: red;
-    border-radius: 15px;
+    height: 40px;
+    border: 2px solid white;
+    border-color: rgb(255, 255, 255);
     background: transparent;
 }
 
-/* Slider */
-#Banner{
-    display: flex;
-    background: rgb(194, 64, 194);
-    justify-content:center;
+#navBtn:hover {
+    background: white;
+    color: black;
 }
-.BannerImg{
-    background: red;
+
+/* header */
+/* <<---------------------------------------------------------- >> */
+
+
+/* <<---------------------------------------------------------- >> */
+/* Slider */
+#Banner {
+    display: flex;
+    background: var(--BG-color);
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    margin: 0px 60px;
+    border-radius: 0px 0px 90px 90px;
+    /* justify-content: center; */
+}
+
+.BannerImg {
+    background: rgba(255, 255, 255, 0.527);
+    margin: 0px 40px 0px 0px;
+    height: 350px;
+    border-radius: 10px 10px 10px 170px;
 
 }
-.BannerContent{
-background: yellow;
+
+.BannerImg-Animation {
+    animation-name: flying;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.555));
 }
+
+@keyframes flying {
+    from {
+        transform: translate(-25px, -10px);
+    }
+
+    to {
+        transform: translate(45px, 10px);
+    }
+}
+
+.BannerContent {
+    background: rgba(255, 255, 255, 0.582);
+    width: 600px;
+    padding-left: 20px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.time-box {
+    background: var(--Font-color2);
+    color: var(--Font-color);
+    width: 350px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px 0px 10px 0px;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.BannerBtn1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    padding: 0px 10px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.bt-2:hover {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.bt-1:hover {
+    background: var(--Font-color2);
+    border: none;
+}
+
 /* Slider */
+
+/* <<---------------------------------------------------------- >> */
